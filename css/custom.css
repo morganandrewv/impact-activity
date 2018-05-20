@@ -6643,6 +6643,56 @@ header {
       margin-bottom: 8px; }
     #features .feature-img-container #feature-img-1 {
       margin-left: -8px; }
+  #features .feature-text-container {
+    text-align: center; }
+    @media (min-width: 768px) {
+      #features .feature-text-container {
+        text-align: left; } }
+  #features .laptop-task-img {
+    margin-top: 16px; }
+    @media (min-width: 992px) {
+      #features .laptop-task-img {
+        position: absolute;
+        top: 40%;
+        left: 0; } }
+  @media (min-width: 992px) and (min-width: 1200px) {
+    #features .laptop-task-img {
+      top: 15%;
+      left: 0; } }
+
+    #features .laptop-task-img img {
+      max-width: 100%;
+      height: auto; }
+      @media (min-width: 576px) {
+        #features .laptop-task-img img {
+          height: 350px; } }
+  @media (min-width: 576px) and (min-width: 768px) {
+    #features .laptop-task-img img {
+      height: 450px; } }
+
+  @media (min-width: 576px) and (min-width: 768px) and (min-width: 992px) {
+    #features .laptop-task-img img {
+      height: 250px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) {
+    #features .laptop-task-img img {
+      height: 300px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) {
+    #features .laptop-task-img img {
+      height: 450px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) {
+    #features .laptop-task-img img {
+      height: 500px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) and (min-width: 1600px) {
+    #features .laptop-task-img img {
+      height: 550px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) and (min-width: 1600px) and (min-width: 1700px) {
+    #features .laptop-task-img img {
+      height: 600px; } }
 
 #main-features {
   text-align: center; }
