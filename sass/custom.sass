@@ -1,0 +1,310 @@
+@import "bootstrap/bootstrap"
+
+$font-stack: "proxima-nova",Helvetica,sans-serif
+
+
+// Colors
+$cta-red: #ef5153
+$gradient-start: #233b68 
+$gradient-stop: #4795bc
+$gradient-2-start: #3fb0ac
+$gradient-2-stop: #347a9d
+$footer: #37373c
+$footer-border: #4b4b51
+$footer-text: #d3d3d3
+
+//Other
+$gradient-deg: 149deg
+
+body
+	position: relative
+	font-family: $font-stack
+	font-size: 18px
+	line-height: 30px
+	font-weight: 400
+	padding-top: 82px
+
+	h1
+		font-size: 44px
+
+	h2
+		font-size: 36px
+		margin: 32px 0
+		&.claustrophic
+			margin: 16px 0
+
+	h3
+		font-size: 30px
+		font-weight: 200
+
+	h4
+		font-size: 22px
+
+	h5
+		font-size: 14px
+		font-weight: 400
+
+	h6
+		font-size: 14px
+		font-weight: 700
+
+	p
+		font-weight: 200
+
+	.btn
+		color: white
+		font-size: 22px
+		font-weight: 200
+		background-color: $cta-red
+		margin: 16px 0
+		padding: 8px 16px
+		@include border-radius(5px)
+		box-shadow: 0 5px 15px rgba(1,1,1,0.1)
+		@include transition(all 0.5s ease-in-out)
+		@include media-breakpoint-up(lg)
+			&:hover
+				transform: translateY(-5px)	
+
+nav
+	padding: 7px 16px
+	position: fixed
+	top: 0
+	left: 0
+	background-color: rgba(255,255,255,0.5)
+	@include transition(all 0.5s ease-in-out)
+	&:hover
+		background-color: white
+	
+	button.navbar-toggler
+		border: 1px solid rgba(0,0,0,0.5)
+		padding: 16px
+		&:hover, &:focus, &:clicked
+			color: black
+
+.nav-link
+	color: black
+	text-align: center
+	@include transition(all 0.5s ease-in-out)
+	&:hover
+		color: $gradient-stop
+			
+.navbar-expand-lg .navbar-nav .nav-link
+	&.demo
+		color: white
+		background-color: $cta-red
+		@include border-radius(5px)
+		@include transition(all 0.5s ease-in-out)
+
+@include media-breakpoint-up(lg)
+	.navbar-collapse
+		flex-grow: unset
+
+	.navbar-expand-lg .navbar-nav .nav-link
+		&.demo
+			color: $cta-red
+			background-color: transparent
+			border: 3px $cta-red solid
+			@include border-radius(5px)
+			margin-left: 16px
+			padding-top: 5px
+			padding-bottom: 5px
+		&.demo:hover
+			background-color: $cta-red
+			color: white	
+
+@include media-breakpoint-up(xl)
+	.navbar-expand-lg .navbar-nav .nav-link
+		padding-right: 17px
+		padding-left: 17px
+
+		&.demo
+			padding-right: 24px
+			padding-left: 24px
+
+header
+	background: linear-gradient($gradient-deg, $gradient-start, $gradient-stop)
+	color: white
+
+	.headline
+		padding: 64px 0px 32px 0
+
+	.hero-image img
+		margin-bottom: -75px
+
+
+	@include media-breakpoint-up(md)
+		background: no-repeat center	url("../img/Hero-BG.jpg")
+		background-size: cover
+
+#intro
+	margin-top: 120px
+	overflow: hidden
+
+	#calendar-img
+		margin-top: -8px
+		margin-bottom: -35px
+
+.section
+	padding: 64px 0
+
+#features
+	position: relative
+	background: linear-gradient($gradient-deg, $gradient-2-start, $gradient-2-stop)
+	color: white
+	.feature-img-container
+		text-align: center
+		margin-top: 16px
+
+		.feature-img
+			margin: 8px
+
+	.feature-text-container
+		text-align: center
+		@include media-breakpoint-up(md)
+			text-align: left
+
+	.laptop-task-img
+		margin-top: 16px
+		@include media-breakpoint-up(xl)
+			position: absolute
+			top: 25%
+			left: 0
+
+		img
+			max-width: 100%
+			height: auto
+			@include media-breakpoint-up(sm)
+				height: 350px
+			@include media-breakpoint-up(md)
+				height: 450px
+	
+#main-features
+	text-align: center
+	p
+		text-align: left
+
+	@include media-breakpoint-up(lg)
+		text-align: left
+
+	#feature-icon-1
+		margin-top: 15px
+		margin-bottom: 31px
+	#feature-icon-2
+		margin-bottom: 15px
+	#feature-icon-3
+		margin-top: 8px
+		margin-bottom: 24px
+
+
+#stats
+	background: linear-gradient($gradient-deg, $gradient-2-start, $gradient-2-stop)
+	color: white
+	text-align: center
+
+	.value-card
+		background: rgba(255,255,255,0.25)
+		width: 100%
+		height: 175px
+		padding: 30px
+		margin-top: 16px
+		margin-bottom: 16px
+		@include border-radius(5px)
+		@include media-breakpoint-up(lg)
+			height: 150px
+		@include media-breakpoint-up(xl)
+			height: 175px
+
+	.value
+		font-size: 36px
+		font-weight: 700px
+		margin-bottom: 8px
+
+	.value-description
+		font-size: 22px
+		font-weight: 200
+
+#slider
+	text-align: center
+
+	.carousel.slide
+		height: 475px
+		@include media-breakpoint-up(sm)
+			height: 420px
+		@include media-breakpoint-up(md)
+			height: 330px
+		@include media-breakpoint-up(lg)
+			height: 300px
+
+		.carousel-item
+			@include media-breakpoint-up(lg)
+				max-width: 80%
+				margin-right: auto
+				margin-left: auto
+
+		.slider-arrow
+			margin-top: 90px
+			@include media-breakpoint-up(sm)
+				margin-top: 60px
+			@include media-breakpoint-up(lg)
+				margin-top: -175px
+
+		.carousel-indicators li
+			background-color: #999
+			background-color: rgba(70,70,70,.25)
+			width: 8px
+			height: 8px
+			@include border-radius(4px)
+
+		.carousel-indicators .active
+			background-color: #444
+
+#bofu
+	background: linear-gradient($gradient-deg, $gradient-start, $gradient-stop)
+	color: white
+	text-align: center
+
+	@include media-breakpoint-up(md)
+		background: no-repeat center	url("../img/Hero-BG.jpg")
+		background-size: cover
+
+footer
+	background-color: $footer
+	border-top: 8px solid $footer-border
+	color: $footer-text
+
+	#footer-logo
+		margin-top: -16px
+		margin-bottom: 32px
+
+	#contact-links, #quick-links
+		text-align: center
+		@include media-breakpoint-up(lg)
+			text-align: left
+
+	a
+		color: $footer-text
+		&:hover
+			color: white
+			text-decoration: none
+
+	.copyright
+		margin-top: 32px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
