@@ -6503,10 +6503,10 @@ body {
     font-size: 36px;
     margin: 32px 0; }
     body h2.claustrophic {
-      margin: 16px 0; }
+      margin: 12px 0; }
   body h3 {
     font-size: 30px;
-    font-weight: 200; }
+    font-weight: 100; }
   body h4 {
     font-size: 22px; }
   body h5 {
@@ -6514,7 +6514,7 @@ body {
     font-weight: 400; }
   body h6 {
     font-size: 14px;
-    font-weight: 700; }
+    font-weight: semibold; }
   body p {
     font-weight: 200; }
   body .btn {
@@ -6523,7 +6523,7 @@ body {
     font-weight: 200;
     background-color: #ef5153;
     margin: 16px 0;
-    padding: 8px 16px;
+    padding: 8px 24px;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(1, 1, 1, 0.1);
     transition: all 0.5s ease-in-out; }
@@ -6547,6 +6547,8 @@ nav {
       color: black; }
 
 .nav-link {
+  font-size: 16px;
+  font-weight: semibold;
   color: black;
   text-align: center;
   transition: all 0.5s ease-in-out; }
@@ -6585,7 +6587,7 @@ header {
   background: linear-gradient(149deg, #233b68, #4795bc);
   color: white; }
   header .headline {
-    padding: 64px 0px 32px 0; }
+    padding: 60px 0px 32px 0; }
   header .hero-image img {
     margin-left: auto;
     margin-right: auto;
@@ -6618,7 +6620,7 @@ header {
 
   @media (min-width: 576px) and (min-width: 768px) and (min-width: 992px) {
     #intro {
-      margin-top: 220px; } }
+      margin-top: 210px; } }
 
   #intro #calendar-img {
     margin-top: -8px;
@@ -6635,60 +6637,12 @@ header {
   background: linear-gradient(149deg, #3fb0ac, #347a9d);
   color: white; }
   #features .feature-img-container {
-    text-align: center;
     margin-top: 16px; }
     #features .feature-img-container .feature-img {
-      margin: 8px auto; }
-  #features .feature-text-container {
-    text-align: center; }
-    @media (min-width: 768px) {
-      #features .feature-text-container {
-        text-align: left; } }
-  #features .laptop-task-img {
-    margin-top: 16px; }
-    @media (min-width: 992px) {
-      #features .laptop-task-img {
-        position: absolute;
-        top: 40%;
-        left: 0; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
-    #features .laptop-task-img {
-      top: 15%;
-      left: 0; } }
-
-    #features .laptop-task-img img {
-      max-width: 100%;
-      height: auto; }
-      @media (min-width: 576px) {
-        #features .laptop-task-img img {
-          height: 350px; } }
-  @media (min-width: 576px) and (min-width: 768px) {
-    #features .laptop-task-img img {
-      height: 450px; } }
-
-  @media (min-width: 576px) and (min-width: 768px) and (min-width: 992px) {
-    #features .laptop-task-img img {
-      height: 250px; } }
-
-  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) {
-    #features .laptop-task-img img {
-      height: 300px; } }
-
-  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) {
-    #features .laptop-task-img img {
-      height: 450px; } }
-
-  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) {
-    #features .laptop-task-img img {
-      height: 500px; } }
-
-  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) and (min-width: 1600px) {
-    #features .laptop-task-img img {
-      height: 550px; } }
-
-  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) and (min-width: 1600px) and (min-width: 1700px) {
-    #features .laptop-task-img img {
-      height: 600px; } }
+      margin-top: 8px;
+      margin-bottom: 8px; }
+    #features .feature-img-container #feature-img-1 {
+      margin-left: -8px; }
 
 #main-features {
   text-align: center; }
@@ -6784,7 +6738,8 @@ footer {
     margin-top: -16px;
     margin-bottom: 32px; }
   footer #contact-links, footer #quick-links {
-    text-align: center; }
+    text-align: center;
+    font-weight: 200; }
     @media (min-width: 992px) {
       footer #contact-links, footer #quick-links {
         text-align: left; } }
