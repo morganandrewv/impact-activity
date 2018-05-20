@@ -6587,7 +6587,20 @@ header {
   header .headline {
     padding: 64px 0px 32px 0; }
   header .hero-image img {
-    margin-bottom: -75px; }
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -90px; }
+    @media (min-width: 576px) {
+      header .hero-image img {
+        margin-bottom: -120px; } }
+  @media (min-width: 576px) and (min-width: 768px) {
+    header .hero-image img {
+      margin-bottom: -150px; } }
+
+  @media (min-width: 576px) and (min-width: 768px) and (min-width: 992px) {
+    header .hero-image img {
+      margin-bottom: -190px; } }
+
   @media (min-width: 768px) {
     header {
       background: no-repeat center url("../img/Hero-BG.jpg");
@@ -6596,9 +6609,23 @@ header {
 #intro {
   margin-top: 120px;
   overflow: hidden; }
+  @media (min-width: 576px) {
+    #intro {
+      margin-top: 150px; } }
+  @media (min-width: 576px) and (min-width: 768px) {
+    #intro {
+      margin-top: 200px; } }
+
+  @media (min-width: 576px) and (min-width: 768px) and (min-width: 992px) {
+    #intro {
+      margin-top: 220px; } }
+
   #intro #calendar-img {
     margin-top: -8px;
-    margin-bottom: -35px; }
+    margin-bottom: -45px; }
+    @media (min-width: 576px) {
+      #intro #calendar-img {
+        margin-bottom: -60px; } }
 
 .section {
   padding: 64px 0; }
@@ -6611,7 +6638,7 @@ header {
     text-align: center;
     margin-top: 16px; }
     #features .feature-img-container .feature-img {
-      margin: 8px; }
+      margin: 8px auto; }
   #features .feature-text-container {
     text-align: center; }
     @media (min-width: 768px) {
@@ -6619,20 +6646,49 @@ header {
         text-align: left; } }
   #features .laptop-task-img {
     margin-top: 16px; }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       #features .laptop-task-img {
         position: absolute;
-        top: 25%;
+        top: 40%;
         left: 0; } }
+  @media (min-width: 992px) and (min-width: 1200px) {
+    #features .laptop-task-img {
+      top: 15%;
+      left: 0; } }
+
     #features .laptop-task-img img {
       max-width: 100%;
       height: auto; }
       @media (min-width: 576px) {
         #features .laptop-task-img img {
           height: 350px; } }
-      @media (min-width: 768px) {
-        #features .laptop-task-img img {
-          height: 450px; } }
+  @media (min-width: 576px) and (min-width: 768px) {
+    #features .laptop-task-img img {
+      height: 450px; } }
+
+  @media (min-width: 576px) and (min-width: 768px) and (min-width: 992px) {
+    #features .laptop-task-img img {
+      height: 250px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) {
+    #features .laptop-task-img img {
+      height: 300px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) {
+    #features .laptop-task-img img {
+      height: 450px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) {
+    #features .laptop-task-img img {
+      height: 500px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) and (min-width: 1600px) {
+    #features .laptop-task-img img {
+      height: 550px; } }
+
+  @media screen and (min-width: 576px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1200px) and (min-width: 1500px) and (min-width: 1600px) and (min-width: 1700px) {
+    #features .laptop-task-img img {
+      height: 600px; } }
 
 #main-features {
   text-align: center; }
@@ -6686,7 +6742,7 @@ header {
     @media (min-width: 768px) {
       #slider .carousel.slide {
         height: 330px; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       #slider .carousel.slide {
         height: 300px; } }
     @media (min-width: 992px) {
