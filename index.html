@@ -354,6 +354,12 @@
 	<script src="js/noframework.waypoints.min.js"></script>
 	<script src="js/countUp.js"></script>
 	<script>
+		$(function () {
+		    var isIE = window.ActiveXObject || "ActiveXObject" in window;
+		    if (isIE) {
+		        $('.modal').removeClass('fade');
+		    }
+		});
 		$(".navbar-toggler").click(function()
 		{      
 		   if($(".navbar-toggler > span")[0].innerText == "Menu") {
