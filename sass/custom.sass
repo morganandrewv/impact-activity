@@ -58,8 +58,10 @@ body
 		background-color: $cta-red
 		margin: 16px 0
 		padding: 8px 24px
-		@include border-radius(5px)
+		@include border-radius(3px)
 		box-shadow: 0 5px 15px rgba(1,1,1,0.1)
+		&.btn-full
+			width: 100%
 		@include transition(all 0.5s ease-in-out)
 		@include media-breakpoint-up(lg)
 			&:hover
@@ -94,7 +96,7 @@ nav
 	&.demo
 		color: white
 		background-color: $cta-red
-		@include border-radius(5px)
+		@include border-radius(3px)
 		@include transition(all 0.5s ease-in-out)
 
 @include media-breakpoint-up(lg)
@@ -106,7 +108,7 @@ nav
 			color: $cta-red
 			background-color: transparent
 			border: 3px $cta-red solid
-			@include border-radius(5px)
+			@include border-radius(3px)
 			margin-left: 16px
 			padding-top: 5px
 			padding-bottom: 5px
@@ -176,8 +178,19 @@ header
 			margin-top: 8px
 			margin-bottom: 8px
 
-		#feature-img-1
-			margin-left: -8px
+		@include media-breakpoint-up(md)
+			#feature-img-1
+				margin-left: -3px
+
+			#feature-img-4
+				margin-left: -5px
+
+		@include media-breakpoint-up(lg)
+			#feature-img-1
+				margin-left: -13px
+
+			#feature-img-4
+				margin-left: -14px
 
 
 
@@ -246,7 +259,7 @@ header
 		padding: 30px
 		margin-top: 16px
 		margin-bottom: 16px
-		@include border-radius(5px)
+		@include border-radius(3px)
 		@include media-breakpoint-up(lg)
 			height: 150px
 		@include media-breakpoint-up(xl)

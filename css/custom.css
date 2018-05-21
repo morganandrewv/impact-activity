@@ -6524,9 +6524,11 @@ body {
     background-color: #ef5153;
     margin: 16px 0;
     padding: 8px 24px;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 5px 15px rgba(1, 1, 1, 0.1);
     transition: all 0.5s ease-in-out; }
+    body .btn.btn-full {
+      width: 100%; }
     @media (min-width: 992px) {
       body .btn:hover {
         transform: translateY(-5px); } }
@@ -6558,7 +6560,7 @@ nav {
 .navbar-expand-lg .navbar-nav .nav-link.demo {
   color: white;
   background-color: #ef5153;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.5s ease-in-out; }
 
 @media (min-width: 992px) {
@@ -6569,7 +6571,7 @@ nav {
     color: #ef5153;
     background-color: transparent;
     border: 3px #ef5153 solid;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-left: 16px;
     padding-top: 5px;
     padding-bottom: 5px; }
@@ -6641,8 +6643,16 @@ header {
     #features .feature-img-container .feature-img {
       margin-top: 8px;
       margin-bottom: 8px; }
-    #features .feature-img-container #feature-img-1 {
-      margin-left: -8px; }
+    @media (min-width: 768px) {
+      #features .feature-img-container #feature-img-1 {
+        margin-left: -3px; }
+      #features .feature-img-container #feature-img-4 {
+        margin-left: -5px; } }
+    @media (min-width: 992px) {
+      #features .feature-img-container #feature-img-1 {
+        margin-left: -13px; }
+      #features .feature-img-container #feature-img-4 {
+        margin-left: -14px; } }
   #features .feature-text-container {
     text-align: center; }
     @media (min-width: 768px) {
@@ -6721,7 +6731,7 @@ header {
     padding: 30px;
     margin-top: 16px;
     margin-bottom: 16px;
-    border-radius: 5px; }
+    border-radius: 3px; }
     @media (min-width: 992px) {
       #stats .value-card {
         height: 150px; } }
