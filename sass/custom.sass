@@ -291,20 +291,24 @@ header
 	.value-card
 		background: rgba(255,255,255,0.25)
 		width: 100%
-		height: 175px
+		height: auto
 		padding: 30px
 		margin-top: 16px
 		margin-bottom: 16px
 		@include border-radius(3px)
-		@include media-breakpoint-up(lg)
-			height: 150px
-		@include media-breakpoint-up(xl)
-			height: 175px
+		@include media-breakpoint-up(md)
+			height: 170px
+			@include media-breakpoint-up(lg)
+				height: 150px
+				@include media-breakpoint-up(xl)
+					height: 175px
 
 	.value
-		font-size: 36px
+		font-size: 26px
 		font-weight: 700px
 		margin-bottom: 8px
+		@include media-breakpoint-up(sm)
+			font-size: 36px
 
 	.value-description
 		font-size: 22px
