@@ -1,4 +1,5 @@
 @import "bootstrap/bootstrap"
+@import "animate"
 
 ///// Variables
 
@@ -242,20 +243,18 @@ header
 			height: auto
 			@include media-breakpoint-up(sm)
 				height: 350px
-				// @include media-breakpoint-up(md)
-				// 	height: 450px
-					@include media-breakpoint-up(lg)
-						height: 250px
-						@media screen and (min-width: 1100px)
-							height: 300px
-							@include media-breakpoint-up(xl)
-								height: 450px
-								@media screen and (min-width: 1500px)
-									height: 500px
-									@media screen and (min-width: 1600px)
-										height: 550px
-										@media screen and (min-width: 1700px)
-											height: 600px
+				@include media-breakpoint-up(lg)
+					height: 250px
+					@media screen and (min-width: 1100px)
+						height: 300px
+						@include media-breakpoint-up(xl)
+							height: 450px
+							@media screen and (min-width: 1500px)
+								height: 500px
+								@media screen and (min-width: 1600px)
+									height: 550px
+									@media screen and (min-width: 1700px)
+										height: 600px
 	
 
 ///// Main Features Section
@@ -394,8 +393,6 @@ footer
 
 	.copyright
 		margin-top: 32px
-
-
 
 
 
